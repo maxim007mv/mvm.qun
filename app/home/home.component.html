@@ -1,0 +1,792 @@
+
+
+
+
+
+  <style> 
+    .card { 
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0);  /*что бы были тени*/
+    transition: 0.3s;
+    }
+    .card:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* что бы при наведение тени были еще больше*/
+    }
+ .container { /*небольшие отступы*/
+    padding: 2px 16px;
+ }
+</style>
+<style>
+@media screen and (min-width: 600px) {
+.container {
+margin: 1em 2em;
+}
+}
+</style>
+
+<style> 
+.card { 
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0);  /*что бы были тени*/
+transition: 0.3s;
+}
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* что бы при наведение тени были еще больше*/
+}
+
+</style>
+
+<style> /* цвета трасс*/
+.colortext {
+color: green;
+}
+
+</style>
+<style>
+.colortext2 {
+color: blue;
+}
+
+</style>
+
+<style>
+.colortext3 {
+color: red;
+}
+</style>
+
+<style>
+.colortext4 {
+color: black;
+}
+</style>
+
+<style> /*кнопка на карту второй вид*/
+.custom-btn {
+width: 90px;
+height: 37px;
+color: #fff;
+border-radius: 5px;
+padding: 10px 25px;
+font-family: 'Lato', sans-serif;
+font-weight: 500;
+background: transparent;
+cursor: pointer;
+transition: all 0.3s ease;
+position: relative;
+display: inline-block;
+ box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+ 7px 7px 20px 0px rgba(0,0,0,.1),
+ 4px 4px 5px 0px rgba(0,0,0,.1);
+outline: none;
+}
+.btn-6 {
+background: rgb(247,150,192);
+background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 100%);
+line-height: 42px;
+padding: 0;
+border: none;
+}
+.btn-6 span {
+position: relative;
+display: block;
+width: 100%;
+height: 100%;
+}
+.btn-6:before,
+.btn-6:after {
+position: absolute;
+content: "";
+height: 0%;
+width: 1px;
+box-shadow:
+ -1px -1px 20px 0px rgba(255,255,255,1),
+ -4px -4px 5px 0px rgba(255,255,255,1),
+ 7px 7px 20px 0px rgba(0,0,0,.4),
+ 4px 4px 5px 0px rgba(0,0,0,.3);
+}
+.btn-6:before {
+right: 0;
+top: 0;
+transition: all 500ms ease;
+}
+.btn-6:after {
+left: 0;
+bottom: 0;
+transition: all 500ms ease;
+}
+.btn-6:hover{
+background: transparent;
+color: #76aef1;
+box-shadow: none;
+}
+.btn-6:hover:before {
+transition: all 500ms ease;
+height: 50%;
+}
+.btn-6:hover:after {
+transition: all 500ms ease;
+height: 50%;
+}
+.btn-6 span:before,
+.btn-6 span:after {
+position: absolute;
+content: "";
+box-shadow:
+ -1px -1px 20px 0px rgba(255,255,255,1),
+ -4px -4px 5px 0px rgba(255,255,255,1),
+ 7px 7px 20px 0px rgba(0,0,0,.4),
+ 4px 4px 5px 0px rgba(0,0,0,.3);
+}
+.btn-6 span:before {
+left: 0;
+top: 0;
+width: 0%;
+height: .5px;
+transition: all 500ms ease;
+}
+.btn-6 span:after {
+right: 0;
+bottom: 0;
+width: 0%;
+height: .5px;
+transition: all 500ms ease;
+}
+.btn-6 span:hover:before {
+width: 50%;
+}
+.btn-6 span:hover:after {
+width: 50%;
+}
+</style>
+
+
+
+
+
+<style >
+TABLE {
+border-collapse: collapse; /*  двойные границы между ячейками */
+background: rgb(10, 129, 198); /* Цвет фона таблицы */
+border: 4px solid rgb(26, 35, 202); /* Рамка вокруг таблицы */
+border-radius: 15px;
+}
+TD, TH {
+padding: 5px; /* Поля вокруг текста */
+border: 2px solid rgb(87, 9, 9); /* Рамка вокруг ячеек */
+border-radius: 15px;
+}
+</style>
+
+
+
+
+
+
+
+
+
+  <div  class="container mx-auto px-4 object-cover bg-zinc-700 rounded-md "> 
+    <img class="float-none rounded-md" src="https://i.ibb.co/tLjxjmm/image.jpg" > 
+    <h4  class="text-xl text-orange-600 "><b>Гай Северина</b></h4> 
+    <p class="ml-4">
+      Один из 6-ти крупнейших
+      горнолыжных комплексов Подмосковья
+    </p>
+        <li class="m-8">Мы находимся в 18 км от Москвы по Новорязанскому шоссе (трасса М5 «Урал»). <br> Горнолыжный клуб Гая Северина предлагает Вам несколько трасс разного уровня, общей протяженностью более 1 000 метров, с перепадом высот до 75 метров. <br> Наш клуб расположен на территории ООПТ «Боровской курган» и на данный момент мы обладаем самыми протяженными и высокими трассами на Юго-востоке Подмосковья. <br> На всех склонах Клуба установлены бесфундаментные буксировочные канатные дороги. <br>
+          <p class="indent-4">
+          Протяженность – 380 м
+          Перепад – 76 м
+         Ширина – до 35 м <br>
+        «Звезда» — трасса с интересным рельефом, который представляет собой три ступени. Для тех, кто еще не совсем уверен в уровне своего катания, есть возможность схода с подъемника раньше верхней точки. Всегда выглаженный склон и много снега.
+     <p class="indent-4">
+        Протяженность – 420 м
+
+        Перепад – 65 м
+        Ширина – до 20 м
+        Трасса «Лесная» — самая сложная трасса, которая включает в себя возможность катания по разным ее ответвлениям (расходится на несколько отдельных трасс). Предназначена для людей с высоким, экспертным и профессиональным уровнем катания.
+      </p>
+      <p class="indent-4">
+        «Учебная»:
+     Протяженность – 130 м
+     Ширина – 20 м
+     <p class="indent-4">
+     «Инструкторская»:
+     Протяженность – 110 м
+     Ширина – 12 м
+
+     «Учебная» и «Инструкторская» — трассы, предназначенные для тех, кто делает свои первые шаги в горных лыжах и сноубординге. Трассы довольно пологие, что дает возможность отточить азы техники, при этом трассы имеют разный профиль для более полного соответствия уровню катания. На трассе «Учебная» разрешено находится без инструктора. На трассу «Инструкторская» допускаются посетители только во время занятия с инструктором по горным лыжам или сноуборду. Самостоятельное катание на данной трассе запрещено.
+      <h4  class="text-xl text-orange-400 ml-2 ">Ссылка на сайт:</h4> 
+      <a href="https://chylkovo.ru"><button class="custom-btn btn-6 mt-3 ml-5"><span>Сайт</span></button></a>
+      <h4 class="text-xl text-orange-400 ml-2 ">Стоимость:</h4>
+      <table  border="1" >
+        <tr>
+         <th>1 подьем(взрослый)</th>
+         <th>1 подьем(дети)</th>
+         <th>1 подьем(взрослый-выходной)</th>
+         <th>1 подьем(дети-выходной)</th>
+        </tr>
+        <tr>
+         <td>60</td>
+         <td>40</td>
+         <td>100</td>
+         <td>60</td>
+       </tr>
+      </table>
+  </div>
+
+
+
+           
+  <div  class="container mx-auto px-4 object-cover bg-zinc-700 rounded-md ">
+    <img class="float-none rounded-md" src="https://i.ibb.co/QJnKLn7/image.png" > 
+    <h4  class="text-xl text-orange-600 "><b>Горнолыжный клуб Леонида Тягачёва</b></h4> 
+    <p class="ml-4">
+      Центр активного отдыха «Горнолыжный клуб Леонида Тягачёва» – старейший горнолыжный курорт Подмосковья, а также традиционная тренировочная база сборных России по горным лыжам и сноуборду.
+    </p>
+        <li class="m-8">Клуб расположен на самой высокой точке Клинско – Дмитровской горной гряды в 40 км от Москвы. <br> Горнолыжный клуб Леонида Тягачева расположен в 39км от МКАД по Дмитровскому шоссе, в районе деревни Шуколово. Далее поворот налево с Дмитровского шоссе в направлении д. Шуколово до пункта назначения Горнолыжный клуб Л.Тягачева. <br> Клуб предлагает 9 трасс: <span class="colortext"> 2 зеленые</span>, <span class="colortext2">2 синие</span>, <span class="colortext3">3 красные</span> и <span class="colortext4">2 черные</span>. <br> Их общая протяженность — 3 689 метров. Все трассы освещаются, а значит подходят для катания в вечернее и ночное время. <br> Горнолыжный клуб Леонида Тягачёва <br>
+          <p class="indent-4 text-orange-400 ">
+            141850, Московская обл., Дмитровский р-н., д. Шуколово<br>
+        
+     <p>
+      Стоимость ski-pass:
+      от 100 рублей за подьем
+      </p>
+      <p class="indent-4">
+      
+     
+   
+
+    
+      <h4  class="text-xl text-orange-400 ml-2 ">Ссылка на сайт:</h4> 
+      <a href="https://www.shukolovo.ru"><button class="custom-btn btn-6 mt-3 ml-5"><span>Сайт</span></button></a>
+      <h4 class="text-xl text-orange-400 ml-2 ">Питание</h4>
+      <p class="indent-4">
+      КАФЕ «ФРЕШ» <br>
+      Пицца, паста, пивные коктейли
+      <p class="indent-4"></p>
+      КАФЕ-БАР «СТАРТ» <br>
+      Русская и европейская кухня
+      <h4 class="text-xl text-orange-400 ml-2 ">Проживание</h4>
+      <p class="indent-4"></p>
+      ГОСТИНИЦА <br>
+      Двухэтажная гостиница с двух-, четырех-, пяти-, семи-, и десятиместным размещением
+      <p><a href="https://www.shukolovo.ru/residence/hotel/"><button class="custom-btn btn-6 mt-3 ml-5"><span>Гостиница </span></button></a></p>
+      <p class="indent-4"></p>
+      КОТТЕДЖИ ШАЛЕ <br>
+      Домики-шале с двух- и трех- местными номерами 
+      <p><a href="https://www.shukolovo.ru/residence/Kottedzhi-shale/"><button class="custom-btn btn-6  mt-3 ml-5"><span>Шале</span></button></a></p>
+
+      <p class="indent-4"></p>
+ГОСТИНИЦА «ГОРНОЛЫЖНАЯ ШКОЛА» <br>
+Гостиничный комплекс в 5 км от Клуба
+<p><a href="https://www.shukolovo.ru/residence/hotel-skischool/"><button class="custom-btn btn-6 mt-3 ml-5"><span>Горн.школа</span></button></a></p>
+  </div>
+
+
+
+
+  <div  class="container mx-auto px-4 object-cover bg-zinc-700 rounded-md" id="kant"> 
+    <img class="float-none rounded-md" src="https://i.ibb.co/S3GLWSR/image.png" > 
+    <h4  class="text-xl text-orange-600 "><b>Кант</b></h4> 
+    <p class="ml-4">
+      КАНТ — самый большой горнолыжный комплекс Москвы – насчитывает 20 склонов разной протяженности и перепада. А это значит, что горнолыжнику или сноубордисту любого уровня и возраста здесь найдется занятие!
+    </p>
+        <li class="m-8">Спортивный центр находится недалеко от Третьего транспортного кольца Москвы. <br> Точный адрес комплекса «Кант»: Электролитный проезд, дом 7, корпус 2. <br> Из центра столицы до него удобно добираться на метро или автомобиле. Также можно воспользоваться общественным транспортом.  
+          <p class="indent-4">
+            Стоимость ski-pass: от 60 рублей за подьем
+     <p class="indent-4 text-orange-400">
+      ВНИМАНИЕ: КАЖДЫЙ ПОНЕДЕЛЬНИК ДО 14.00 ВСЕ ПОДЪЕМНИКИ ЗАКРЫТЫ НА ПРОФИЛАКТИКУ
+      </p>
+      <p class="indent-4">
+        На учебных склонах заниматься обучением можно только с тренерами спортивной школы "Нагорная".
+     <p class="indent-4">
+      <h4 class="text-xl text-orange-400 ml-2 ">Время работа:</h4>
+      <p class=" mt-3 ml-5">пн: с 14:00 до 23:00 <br>
+        вт-вс: с 09:00 до 23:00</p>
+     
+      <h4  class="text-xl text-orange-400 ml-2 ">Ссылка на сайт:</h4> 
+      <a href="https://kant-sport.ru"><button class="custom-btn btn-6 mt-3 ml-5"><span>Сайт</span></button></a>
+      <h4 class="text-xl text-orange-400 ml-2 ">Стоимость:</h4>
+      <p><table id="tablepress-108" class="tablepress tablepress-id-108">
+        <thead>
+        <tr class="row-1 odd">
+        <th class="column-1">&nbsp;</th>
+        <th class="column-2">Взрослые (13+)</th>
+        <th class="column-3">Дети (до 12 лет)</th>
+        </tr>
+        </thead>
+        <tbody class="row-hover">
+        <tr class="row-2 even">
+        <td class="column-1">Будние дни до 17:00 </td>
+        <td class="column-2">50</td>
+        <td class="column-3">35</td>
+        </tr>
+        <tr class="row-3 odd">
+        <td class="column-1">Будние дни после 17:00 </td>
+        <td class="column-2">80</td>
+        <td class="column-3">56</td>
+        </tr>
+        <tr class="row-4 even">
+        <td class="column-1">Выходные и праздничные дни</td>
+        <td class="column-2">100</td>
+        <td class="column-3">70</td>
+        </tr>
+        <tr class="row-5 odd">
+        <td class="column-1">Воскресенье после 16:00</td>
+        <td class="column-2">70</td>
+        <td class="column-3">49</td>
+        </tr>
+        </tbody>
+        </table>
+        
+  </div>
+
+
+
+
+
+
+  <div  class="container mx-auto px-4 object-cover bg-zinc-700 rounded-md "> 
+    <img class="float-none rounded-md" src="https://i.ibb.co/nwv59nt/image.jpg" > 
+    <h4  class="text-xl text-orange-600 "><b>Лисья Гора</b></h4> 
+    <p class="ml-4">
+      Горнолыжный комплекс «Лисья гора» появился в Подмосковье в 2007 году. Удобное расположение, живописная природа и хорошие трассы – то, что нужно для любителей активного зимнего отдыха. Комплекс открыт с декабря по март и ждет лыжников и сноубордистов. А еще здесь можно покататься на тюбинге, вкусно поесть и прекрасно отдохнуть.
+    </p>
+        <li class="m-8">  Московская Область, г. Балашиха, Леоновское шоссе (700 метров от а/д Москва-Нижний Новгород)
+          <p class="indent-4">
+            141850, Московская обл., Дмитровский р-н., д. Шуколово
+     <p class="indent-4 ">
+      Всего здесь работает пять трасс разного уровня сложности, все они оборудованы современными подъемниками. <br> Особая технология освещения позволяет кататься не только днем, но и поздно вечером.
+      <p class="indent-4 ">
+      Здесь есть <span class="colortext3">два учебных склона</span> – они идеально подходят для первых занятий с инструктором. Вам объяснят технику и правила безопасности, а сами трассы небольшие и ровные, чтобы обойтись без ненужных падений. <br> Следующий склон подойдет для начинающих спортсменов – он тоже ровный и без перепадов крутизны. <br> Здесь можно отработать технику катания, чтобы перейти на страссу посложнее.
+     
+      <p class="indent-4">
+        Третий и четвертый склон ждут опытных лыжников и сноубордистов – их длина <span class="colortext3">350</span> и <span class="colortext3">400</span> метров, есть впечатляющий перепад высот. <br> Оба склона досточно широкие – так что будет место для маневра. <br> Пятый склон – для настоящих <span class="colortext3">экстремалов</span>: протяженность – <span class="colortext3">400 метров</span>, а перепад высот – <span class="colortext3">более 95 метров</span>! <br> Эта трасса отлично подходит для отработки техники скоростного катания.
+     <p class="indent-4">
+      Стоимость ski-pass:от 70 рублей за подьем
+      
+  
+     
+      <h4  class="text-xl text-orange-400 ml-2 ">Ссылка на сайт:</h4> 
+      <a href="http://foxrock.su"><button class="custom-btn btn-6 mt-3 ml-5"><span>Сайт</span></button></a>
+      <h4 class="text-xl text-orange-400 ml-2 ">Питание:</h4>
+      
+   <h5>Фуд-Корт:</h5>
+   <p class="indent-4">
+  ассортимент блинчиков <br>
+  хотдоги
+  пирожки<br>
+  cупы <br>
+  чай и кофе <br>
+  напитки из имбиря и шиповника <br>
+  </div>
+
+
+
+  <div  class="container mx-auto px-4 object-cover bg-zinc-700 rounded-md "> 
+    <img class="float-none rounded-md" src="https://i.ibb.co/Wc3c3bv/mv4-2.png" > 
+    <h4  class="text-xl text-orange-600 "><b>Горнолыжный Клуб Целеево</b></h4> 
+    <p class="ml-4">
+      Хотите насладиться зимними днями? Посетите «Горнолыжный Клуб Целеево». 
+      Четыре идеально ухоженных склона для горных лыж и сноуборда, профессиональная освещаемая трасса для беговых лыж, катание на снегоходах, коньках и санках, а также уютное кафе Stella Alpina и зимний Клубный дом Bear's Lounge с видом на склоны в атмосфере абсолютного комфорта подарят вам незабываемые впечатления.
+    </p>
+        <li class="m-8"> Дмитровский городской округ, деревня Целеево <br>
+        
+            Прокат снаряжения, каток, тюбинг, трасса для беговых лыж,  кафе, зоны отдыха. <br> Проживание в шале или номерах, прогулки на снегоходах, зимний гольф. <br>
+     <p class="indent-4">
+      В «Горнолыжном Клубе Целеево» в зимний сезон ежедневно с <span class="colortext3">9:00</span>до <span class="colortext3">23:00</span> <br> Работают четыре идеально подготовленных склона для горных лыж и сноуборда протяжённостью от <span class="colortext3">300</span> до <span class="colortext3">400</span> метров, перепад высот до 65 метров. <br> Протяженность соединяющей трассы с 4 склона на 1 склон составляет 540 метров. 
+     
+      <p class="indent-4">
+        В Клубе функционируют бугельные подъёмники тарелочного типа. Количество подъемов по ski-pass в течение дня неограниченно. Для проживающих ski-pass действует 24 часа с момента приобретения
+     <p class="indent-4 underline underline-offset-8">
+      +7 (495) 980-63–01
+      <h4  class="text-xl text-orange-400 ml-2 ">Ссылка на сайт:</h4> 
+      <a href="https://tseleevo.ru/gornolyizhnyij-sport.html"><button class="custom-btn btn-6 mt-3 ml-5"><span>Сайт</span></button></a>
+      <h4 class="text-xl text-orange-400 ml-2 ">Стоимость:</h4>
+      <table border="1">
+        <tr>
+         <th>Целый день(взрослый)</th>
+         <th>Целый день(детский)</th>
+         <th>Индивидуальное занятие</th>
+        </tr>
+        <tr>
+         <td>От 2900</td>
+         <td>От 1700</td>
+         <td>От 4000</td> 
+      </table>
+      
+  </div>
+
+
+  <div  class="container mx-auto px-4 object-cover bg-zinc-700 rounded-md ">
+    <img class="float-none rounded-md" src="https://i.ibb.co/bdJxW25/mv2.jpg" > 
+    <h4  class="text-xl text-orange-600 "><b>спортивный курорт волен+степаново</b></h4> 
+    <p class="ml-4">
+      Самый большой горнолыжный комплекс Подмосковья с 1998 года.Волен+Степаново один ski-pass,два клуба,23 склона.
+    </p>
+        <li class="m-8"> По Дмитровскому шоссе проехать пос. Деденево, железнодорожный мост и под указателем «Спортивный парк Волен» повернуть с трассы налево<br>
+           На Т-образной развилке опять по указателю налево. <br> Проехать еще 1 километр и далее по знакам: если в «Волен» – повернуть направо, если в «Степаново» – ехать прямо
+          Дмитровский городской округ Яхрома улица Троицкая 1 <br>
+          23 спуска: от "Учебной" до "Черной"; <span class="colortext3">9 километров</span>: общая длина склонов комлексов Волен-Степаново <br> Прокат снаряжения,тюбинг,кафе,гостиница,баня,детская игровая комната,каток,обучение в группе и индивидуальной. <br>
+          +7 (495) 161-61-30
+     
+      <h4  class="text-xl text-orange-400 ml-2 ">Ссылка на сайт:</h4> 
+      <a href="https://www.volen.ru/"><button class="custom-btn btn-6 mt-3 ml-5"><span>Сайт</span></button></a>
+      <h4 class="text-xl text-orange-400 ml-2 ">Стоимость:</h4>
+      <table border="1">
+        <tr>
+        <th>Будни</th>
+        <th>Выходные</th>
+        <th>Суточный неогр</th>
+        <th>Суточный неогр(выходной)</th>
+        </tr>
+        <tr>
+        <td>60 рублей подьем</td>
+        <td>110 рублей подьем</td>
+        <td>2000</td>
+        <td>3500</td>
+        </table>
+        
+        <h4 class="text-xl text-orange-400 ml-2 ">Отель:</h4>   
+
+        Номер стандарт <br>
+        Номер комфорт <br>
+        Номер студия
+
+         
+  </div>
+
+
+
+
+
+
+<div  class="container mx-auto px-4 object-cover bg-zinc-700 rounded-md ">
+  <img class="float-none rounded-md" src="https://i.ibb.co/d0p1FK7/mv3.png" > 
+  <h4  class="text-xl text-orange-600 "><b>Горнолыжный курорт «Сорочаны»</b></h4> 
+  <p class="ml-4">
+    Горнолыжный курорт «Сорочаны» является самым современным спортивным курортом Московской области. 
+  </p>
+      <li class="m-8">Дмитровский городской округ, деревня Целеево<br>
+        Спортивный курорт «Сорочаны» — находится в   49 км от МКАД по Дмитровскому шоссе, в экологически чистой зоне Клинско-дмитровской гряды Дмитровского район. <br>
+        Здесь Вас ждет гора высотой <span class="colortext3">225 м</span>,<span class="colortext3"> 10 трасс</span> с перепадом высот до <span class="colortext3">90 м</span>, шириной до <span class="colortext3">70 м</span> и протяженностью до <span class="colortext3">1050 м</span><br>
+        Есть отдельный склон для обучения и для тюбинга. <br>
+        На склонах горы установлены подъемники: двухместная и четырехместная кресельные канатные дороги, а также три бугельных подъемника и два беби-лифта для сноутюбинга. <br>
+        В парке есть прокат оборудования, мастерская по его ремонту, кафе и гостиничный комплекс. Новичкам свою помощь предлагают опытные инструкторы. <br>
+        <b>Инфраструктура:</b>: прокат снаряжения, мастерская по ремонту, тюбинг, кафе, гостиница, каток. <br>
+   +7 (495) 788-85-44
+    <h4  class="text-xl text-orange-400 ml-2 ">Ссылка на сайт:</h4> 
+    <a href="https://sorochany.ru/"><button class="custom-btn btn-6 mt-3 ml-5"><span>Сайт</span></button></a>
+    <h4 class="text-xl text-orange-400 ml-2 ">Стоимость:</h4>
+    
+    <table border="1">
+      <tr>
+       <th>Подьем</th>
+       <th>Инд.занятие</th>
+      </tr>
+      <tr>
+       <td>От 130</td>
+       <td>От 1500</td>
+     </tr>
+    </table>
+       
+</div>
+
+
+
+
+
+
+<div  class="container mx-auto px-4 object-cover bg-zinc-700 rounded-md ">
+  <img class="float-none rounded-md" src="https://i.ibb.co/b5cCywF/mv5.jpg" > 
+  <h4  class="text-xl text-orange-600 "><b>Парк «Яхрома»</b></h4> 
+  <p class="ml-4">
+    Парк “Яхрома” расположен в непосредственной близости от старинного русского города Дмитров, основанного в 1154 году
+  </p>
+      <li class="m-8">Дмитровский городской округ, деревня Целеево<br>
+        В парке «Яхрома» работают четыре горнолыжных склона с оборудованными трассами различной сложности. <br>
+        Их протяженность — от <span class="colortext3">250</span> до <span class="colortext3">650</span>метров <br>
+        Есть отдельный склон для обучения и для тюбинга. <br>
+        Установлены буксировочные подъемники с Т-образными бугелями и бэби-лифты. <br>
+        В парке также есть каток, трасса для тюбинга и тобоган. <br>
+        <b>Инфраструктура:</b> прокат снаряжения, каток, тюбинг, тобоган, кафе, гостиница <br>
+        +7 (496) 981-89-39
+    <h4  class="text-xl text-orange-400 ml-2 ">Ссылка на сайт:</h4> 
+    <a href="https://yahroma-park.ru/"><button class="custom-btn btn-6 mt-3 ml-5"><span>Сайт</span></button></a>
+    <h4 class="text-xl text-orange-400 ml-2 ">Стоимость:</h4>
+    
+    <table  border="1">
+    <tr>
+     <th>1 подьем(взрослый)</th>
+     <th>1 подьем( дети до 12)</th>
+     <th>Индивидуальное занятие</th>
+    </tr>
+    <tr>
+     <td>50 </td>
+     <td>25</td>
+     <td>от 1800</td>
+   </tr>
+  </table>
+     
+</div>
+
+
+
+
+
+
+
+
+
+
+<div  class="container mx-auto px-4 object-cover bg-zinc-700 rounded-md ">
+  <img class="float-none rounded-md" src="https://i.ibb.co/161pSJk/mv6.png" > 
+  <h4  class="text-xl text-orange-600 "><b>Горнолыжный курорт «Спас-Каменка»</b></h4> 
+  <p class="ml-4">
+    «Спас-Каменка» - живописный альпийский поселок на берегу окруженного лесами большого (30 гектар) и глубокого озера с кристально чистой водой. Этот уникальный уголок подмосковной природы расположен всего в 26 километрах от МКАД по Дмитровскому шоссе.
+  </p>
+      <li class="m-8">Дмитровский городской округ, коттеджный поселок Спас-Каменка<br>
+        Прокат снаряжения, тюбинг, кафе, гостиница <br>
+        Высота <span class="colortext3"> 40 м</span>. Длина склонов:  <span class="colortext3">№1</span> 300 м,  <span class="colortext3">№2</span>  100 м,  <span class="colortext3">№3</span>  260 м. <br> Трасса <span class="colortext3">тюбинга</span> - 200 м.
+        <span class="colortext3"> <br> П1</span>,<span class="colortext3">П2</span> - подъемник бугельный типа беби-лифт.
+        <span class="colortext3"> <br> П3</span> - вытяжной бугельный подъемник. <br>
+        +7 (925) 225-61-04
+    <h4  class="text-xl text-orange-400 ml-2 ">Ссылка на сайт:</h4> 
+    <a href="https://spaskamenka.ru/snowpark/"><button class="custom-btn btn-6 mt-3 ml-5"><span>Сайт</span></button></a>
+    <h4 class="text-xl text-orange-400 ml-2 ">Стоимость:</h4>
+    
+    <table  border="1">
+      <tr>
+       <th>Стоимость входа на территории(взрослый)</th>
+       <th>Стоимость входа на территории(детский)</th>
+       
+      </tr>
+      <tr>
+       <td>от 800</td>
+       <td>от 400</td>
+       
+     </tr>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+<div  class="container mx-auto px-4 object-cover bg-zinc-700 rounded-md">
+  <img class="float-none rounded-md" src="https://i.ibb.co/d66Xz2C/image.jpg" > 
+  <h4  class="text-xl text-orange-600 "><b>Горнолыжный комплекс MoonVillage</b></h4> 
+  <p class="ml-4">
+    Черневская горка – одно из любимых мест активного отдыха жителей и гостей Красногорска. В последние годы горка приобрела официальный статус горнолыжного комплекса
+  </p>
+      <li class="m-8">Красногорск, улица Карбышева, 33 (напротив)<br>
+        Перепад высоты – <span class="colortext3">55</span> метров. <br> Длина основного склона по прямой – около <span class="colortext3">230</span> метров. <br> Есть обводная трасса, по ней можно «накрутить» и <span class="colortext3">400</span> метров. <br> Оставили зону для сноуборда, где ребята могут попрыгать на досках и лыжах» <br>
+        +7 (916) 395-34-64
+    <h4  class="text-xl text-orange-400 ml-2 ">Ссылка на сайт:</h4> 
+    <a href="https://vk.com/moonv2023"><button class="custom-btn btn-6 mt-3 ml-5"><span>Сайт</span></button></a>
+    <h4 class="text-xl text-orange-400 ml-2 ">Стоимость:</h4>
+    
+    <table  border="1">
+      <tr>
+       <th>Один подьем</th>
+       <th>прокат оборудования</th>
+       
+      </tr>
+      <tr>
+       <td>от 70</td>
+       <td>от 800</td>
+       
+     </tr>
+    </table>
+       
+</div>
+
+
+
+
+
+<div  class="container mx-auto px-4 object-cover bg-zinc-700 rounded-md ">
+  <img class="float-none rounded-md" src="https://i.ibb.co/VJF0Dgm/mv7.png" > 
+  <h4  class="text-xl text-orange-600 "><b>Тюбинг-парк «Елагино»</b></h4> 
+  <p class="ml-4">
+    В парке «Елагино» есть не только горки для тюбинга, но и горнолыжные склоны. 
+  </p>
+      <li class="m-8">Наро-Фоминский городской округ, вблизи деревни Елагино<br>
+        Длина трасс — от <span class="colortext3">100</span> до <span class="colortext3">350</span> метров. <br> Спуски оборудованы подъемниками и освещением. <br> Работает прокат спортивного инвентаря, медпункт, парковка и уютный ресторан с панорамным видом на склон. <br>
+        +7 (968) 644-07-30 
+    <h4  class="text-xl text-orange-400 ml-2 ">Ссылка на сайт:</h4> 
+    <a href="http://elagino-park.ru/"><button class="custom-btn btn-6 mt-3 ml-5"><span>Сайт</span></button></a>
+    <h4 class="text-xl text-orange-400 ml-2 ">Стоимость:</h4>
+    
+    <table  border="1">
+      <tr>
+       <th>Один подьем</th>
+       <th>прокат оборудования(взрослый)</th>
+       <th>прокат оборудования(дети до 14)</th>
+      </tr>
+      <tr>
+       <td>от 20</td>
+       <td>от 600</td>
+       <td>от 450</td> 
+     </tr>
+    </table>
+</div>
+
+
+
+
+
+
+
+<div  class="container mx-auto px-4 object-cover bg-zinc-700 rounded-md ">
+  <img class="float-none rounded-md" src="https://i.ibb.co/yhm70GC/mv8.png" > 
+  <h4  class="text-xl text-orange-600 "><b>Горнолыжный курорт «Царьград»</b></h4> 
+  <p class="ml-4">
+    Курорт предлагает прокат спортивного снаряжения, обучение в школе катания на горных лыжах и сноуборде. Рядом со склоном есть трактир «Гора», где можно отдохнуть и пообедать.
+  </p>
+      <li class="m-8"> Городской округ Серпухов, деревня Спас-Тешилово, 3<br>
+        Загородный отель «Царьград» в Серпухове приглашает любителей зимнего спорта на свой горнолыжный склон. <br> Гостям доступны два трассы: <span class="colortext3">основная</span>  (350 метров) и <span class="colortext3">учебная</span> (220 метров). <br> Также есть спуски для тюбинга, которые особенно понравятся детям. <br>
+        Курорт предлагает <span class="colortext3">прокат</span> спортивного снаряжения, <span class="colortext3">обучение</span> в школе катания на горных лыжах и сноуборде. <br> Рядом со склоном есть трактир <span class="colortext3">«Гора»</span>, где можно отдохнуть и пообедать. <br>
+        +7 (495) 266-99-67 <br>+7(495) 989-23-88 
+     
+    <h4  class="text-xl text-orange-400 ml-2 ">Ссылка на сайт:</h4> 
+    <a href=" https://www.tzargrad.ru/entertainment/service/gornolyzhnyy_spusk/"><button class="custom-btn btn-6 mt-3 ml-5"><span>Сайт</span></button></a>
+    <h4 class="text-xl text-orange-400 ml-2 ">Стоимость:</h4>
+    
+    <table  border="1">
+    <tr>
+     <th>Один подьем(взрослый будни)</th>
+     <th>Один подьем(взрослый выходной)</th>
+    </tr>
+    <tr>
+     <td>50</td>
+     <td>80</td>  
+   </tr>
+  </table>
+       
+</div>
+
+
+
+     
+      
+
+
+
+
+
+
+<div  class="container mx-auto px-4 object-cover bg-zinc-700 rounded-md ">
+  <img class="float-none rounded-md" src="" > 
+  <h4  class="text-xl text-orange-600 "><b>Горнолыжный комплекс «Олимп»</b></h4> 
+  <p class="ml-4">
+    Курорт предлагает прокат спортивного снаряжения, обучение в школе катания на горных лыжах и сноуборде. Рядом со склоном есть трактир «Гора», где можно отдохнуть и пообедать.
+  </p>
+      <li class="m-8"> городской округ Коломна, деревня Малое Уварово<br>
+        2 склона протяженностью 300 м и 450м, перепад высот 50м. 3 бугельных подъемника.
+        Для информации:  на горнолыжном склоне возможны занятия детской школы Метеор. <br>
+        +7 (499) 994-98-76  <br> +7(925)674-09-22
+      
+       <h4  class="text-xl text-orange-400 ml-2"> Расписание:</h4> 
+       <p class="mt-3 ml-5">пн-пт 16.00-20.00 <br>
+       сб 10.00-12.00 <br>
+       Гору мы не закрываем,просьба иметь это в виду
+      </p>
+    <h4  class="text-xl text-orange-400 ml-2 ">Ссылка на сайт:</h4> 
+    <a href="https://olimp-hotel.com/uslugi/gornolyizhnyij-spusk"><button class="custom-btn btn-6 mt-3 ml-5"><span>Сайт</span></button></a>
+    <h4 class="text-xl text-orange-400 ml-2 ">Стоимость:</h4>
+    
+    <table  border="1">
+      <tr>
+       <th>Час катания</th>
+       <th>Прокат оборудования(взрослый)</th>
+       <th>Прокат оборудования(дети до 12 лет)</th>
+      </tr>
+      <tr>
+       <td>от 500</td>
+       <td>600 рублей</td> 
+       <td>450 рублей</td>   
+     </tr>
+    </table>
+       
+       
+</div>
+
+
+
+
+
+
+
+<div  class="container mx-auto px-4 object-cover bg-zinc-700 rounded-md ">
+  <img class="float-none rounded-md" src="https://i.ibb.co/vj5R4Xj/mv9.jpg" > 
+  <h4  class="text-xl text-orange-600 "><b>Экстрим-парк «Фристайл»</b></h4> 
+  <p class="ml-4">
+    Курорт предлагает прокат спортивного снаряжения, обучение в школе катания на горных лыжах и сноуборде. Рядом со склоном есть трактир «Гора», где можно отдохнуть и пообедать.
+  </p>
+      <li class="m-8">Дзержинский, улица Угрешская, 19<br>
+        Здесь расположились <span class="colortext3">6 трасс</span>: 1 трасса для тюбинга, 1 трасса для детей, 2 легкие трассы, 2 трассы средней сложности. <br> Длина трасса варьируется от <span class="colortext3">200</span> до <span class="colortext3">275</span> метров. <br>
+        На территории парка есть <span class="colortext3">прокат</span> горнолыжного оборудования и <span class="colortext3">кафе</span>, где можно перекусить и купить согревающие напитки. <span class="colortext3"> <br> Инструкторы</span> проводят обучение индивидуально или в небольших группах <br>
+       +7 (495) 966-41-20
+    <h4  class="text-xl text-orange-400 ml-2 ">Ссылка на сайт:</h4> 
+    <a href="https://parkfreestyle.ru/"><button class="custom-btn btn-6 mt-3 ml-5"><span>Сайт</span></button></a>
+    <h4 class="text-xl text-orange-400 ml-2 ">Стоимость:</h4>
+    
+  <table  border="1">
+    <tr>
+     <th>Один подьем</th>
+     <th>Абонент на целый день(будни)</th>
+     <th>Абонент на целый день(выходной)</th>
+     <th>Неограниченный доступ на подъемники парка в течение сезона</th>
+    </tr>
+    <tr>
+     <td>от 50</td>
+     <td>800рублей</td> 
+     <td>1100 рублей</td> 
+     <td>18000рублей</td>  
+   </tr>
+  </table>
+     
+       
+</div>
+
+
+
+
+
+
+
+<div  class="container mx-auto px-4 object-cover bg-zinc-700 rounded-md ">
+  <img class="float-none rounded-md" src="https://i.ibb.co/q9Vn3s9/mv10.png" > 
+  <h4  class="text-xl text-orange-600 "><b>Горнолыжный склон в парк-отеле «Морозовка»</b></h4> 
+  <p class="ml-4">
+    Парк-отель «Морозовка» предлагает всем любителям зимних видов спорта посетить горнолыжный склон в 3 км от Звенигорода. 
+  </p>
+      <li class="m-8">Городской округ Солнечногорск, деревня Льялово<br>
+    Протяженность трассы 300 м, предусмотрено несколько уровней сложности. <br> Для облегчения подъема работает бугельный подъемник. <br>
+  Есть трасса для сноубордов и тюбингов. <br>
+    Помимо горнолыжного отдыха, предоставляется целый комплекс сопутствующих услуг: тренинги от профессиональных инструкторов, прокат горных лыж, сноубордов, «ватрушек», экипировки и снаряжения, услуги кафе. <br>
+    +7 (499) 110-76-27    +7 (495) 120-29-43 <br>
+    Горнолыжный отдых включает не только горнолыжный склон, а также открытый каток, поле для хоккея, трассу для беговых лыж.</li>   
+
+    <h4  class="text-xl text-orange-400 ml-2 ">Ссылка на сайт:</h4> 
+    <a href="https://park-hotel-morozovka.ru/sport"><button class="custom-btn btn-6 mt-3 ml-5"><span>Сайт</span></button></a>
+    <h4 class="text-xl text-orange-400 ml-2 ">Стоимость:</h4>
+    <table  border="1">
+      <tr>
+       <th>Один подьем</th>
+       <th>Абонент на целый день(будни)</th>
+       <th>Абонент на целый день(выходной)</th>
+       <th>Неограниченный доступ на подъемники парка в течение сезона</th>
+      </tr>
+      <tr>
+       <td>от 50</td>
+       <td>800рублей</td> 
+       <td>1100 рублей</td> 
+       <td>18000рублей</td>  
+     </tr>
+    </table>
+       
+</div>
